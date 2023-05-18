@@ -4,7 +4,7 @@ local data = { -- Table of IDs
   37028
 }
 
-macro(500, "Drop Items", function()
+macro(60000, "Drop Items", function()
   for _, container in pairs(getContainers()) do
     for i, item in pairs(container:getItems()) do
         local info = table.find(data, item:getId())
