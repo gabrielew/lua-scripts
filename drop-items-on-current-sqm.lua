@@ -5,6 +5,7 @@ local data = { -- Table of IDs
 }
 
 macro(60000, "Drop Items", function()
+  say("Script criado por Dijkstra, discord: gabp#2258")
   for _, container in pairs(getContainers()) do
     for i, item in pairs(container:getItems()) do
         local info = table.find(data, item:getId())
